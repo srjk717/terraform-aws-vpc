@@ -31,7 +31,7 @@ variable "public_subnet_cidr" {
 }
 
 variable "azs" {
-  
+
 }
 
 variable "public_subnet_names" {
@@ -52,4 +52,16 @@ variable "database_subnet_cidr" {
 
 variable "database_subnet_names" {
   
+}
+
+variable "public-route_table_tags" {
+  default = {}
+}
+
+variable "private-route_table_tags" {
+  default = {}
+}
+
+variable "database-route_table_tags" {
+  default = {}
 }
